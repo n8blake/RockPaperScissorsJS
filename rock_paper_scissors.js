@@ -10,15 +10,42 @@ let computerResponse = "";
 
 // return the winner
 function compare(userResponse, computerResponse){
-	// if the user has paper 
-	
-		// if the computer has rock
-			// user wins
-		// if the computer has scissors
-			// computer wins
-		// if the computer has paper
-			// it's a draw
-	// 
+	userResponse = userResponse.toUpperCase();
+	switch(userResponse) {
+	  case 'R':
+	    // code block
+	    	if(computerResponse === "S"){
+	    		return 'user';
+	    	} else if(computerResponse === "P"){
+	    		return 'computer';
+	    	} else {
+	    		return 'tie';
+	    	}
+	    break;
+	  case 'S':
+	    // code block
+	       if(computerResponse === "P"){
+	    		return 'user';
+	    	} else if(computerResponse === "R"){
+	    		return 'computer';
+	    	} else {
+	    		return 'tie';
+	    	}
+	    break;
+	  case 'P':
+	  	//
+	  	if(computerResponse === "R"){
+    		return 'user';
+    	} else if(computerResponse === "S"){
+    		return 'computer';
+    	} else {
+    		return 'tie';
+    	}
+	  	break;
+	  default:
+	  	// alert that input was incorrect...
+	    // code block
+	}
 }
 
 // update win count
