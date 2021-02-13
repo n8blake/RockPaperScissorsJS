@@ -71,6 +71,6 @@ function startGame(){
 	}
 }
 
-if(window.confirm("Play game?")){
+/*if(window.confirm("Play game?")){
 	startGame();		
-}
+}*/
